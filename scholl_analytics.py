@@ -1,4 +1,5 @@
 import random
+import numpy as np
 
 school = []
 letters = ['a','b','c','d']
@@ -40,8 +41,12 @@ def create_school(num_classes):
         school.append(get_class(random.randint(5,25)))
 
 def get_analytics(school):
-    for class_index in school:
-        print(class_index.get('class_name'), class_index.get('scores').
+    all_scores = []
+    scores_to_show = []
+    for class_index in school.sort:
+        print(class_index.get('class_name'), np.mean(class_index.get('scores')))
+        all_scores.extend(class_index.get('scores'))
+    print('School', np.mean(all_scores))
 
 
 
@@ -50,4 +55,4 @@ create_school(13)
 for class_index in school:
     print(class_index)
 
-
+get_analytics(school)
