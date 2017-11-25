@@ -32,27 +32,33 @@ def get_class(num_people):
 
     return class_info
 
-def create_school(num_classes):
+def initialize_school(num_classes, description_mode = False):
 
     if num_classes >= len(letters) * len(classes):
+        print(' Our school is not so big for ' + str(num_classes) + " classes. Please, descrease the number. ")
         return 
 
     for index in range(num_classes):
-        school.append(get_class(random.randint(5,25)))
+        temp_class = get_class(random.randint(5,25))
+        school.insert(index, temp_class)
+
+    if description_mode == True:
+        for class_index in school:
+            print(class_index)
+
 
 def get_analytics(school):
     all_scores = []
     scores_to_show = []
-    for class_index in school.sort:
-        print(class_index.get('class_name'), np.mean(class_index.get('scores')))
+    print("============================")
+    for class_index in school:
+        print(class_index.get('class_name'), round(np.mean(class_index.get('scores')), 2))
         all_scores.extend(class_index.get('scores'))
-    print('School', np.mean(all_scores))
+    print("++++++++++++++++++++++++++++")
+    print('School', round(np.mean(all_scores),2))
+    print("============================")
 
 
 
-create_school(13)
-
-for class_index in school:
-    print(class_index)
-
+initialize_school(20, description_mode = True)
 get_analytics(school)

@@ -1,2 +1,364 @@
 root - INFO - MessageKirill StepanovЭто сообщение должно записаться на сервер. Пожалуйста
 telegram.ext.updater - WARNING - Exiting immediately!
+root - INFO - Message by Kirill Stepanov; Message: pp
+root - INFO - Message by Kirill Stepanov; Message: af
+telegram.ext.updater - WARNING - Exiting immediately!
+root - INFO - Message by Kirill Stepanov; Message: user_text_words
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 31, in chat_handler
+    if re.search('.*-?[0-9]+[-+/*][0-9]+=', user_text):
+NameError: name 'user_text' is not defined
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 31, in chat_handler
+    if re.search('.*-?[0-9]+[-+/*][0-9]+=', user_text):
+NameError: name 'user_text' is not defined
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 38, in chat_handler
+    update.message.reply_text("Nothing! - " + str(user_text))
+NameError: name 'user_text' is not defined
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 38, in chat_handler
+    run_calculation(main_calculation_pattern)
+NameError: name 'main_calculation_pattern' is not defined
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 41, in chat_handler
+    run_calculation(main_calculation_pattern)
+NameError: name 'main_calculation_pattern' is not defined
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 41, in chat_handler
+    run_calculation(main_calculation_pattern, update)
+NameError: name 'main_calculation_pattern' is not defined
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 43, in chat_handler
+    run_calculation(update.message.text, update)
+  File "bot.py", line 31, in run_calculation
+    if re.search(r"[-]?\d*(\.\d+|\d+)?([+-/*]\d*(\.\d+|\d+)?+=", main_calculation_pattern):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/re.py", line 173, in search
+    return _compile(pattern, flags).search(string)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/re.py", line 293, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/sre_compile.py", line 536, in compile
+    p = sre_parse.parse(p, flags)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/sre_parse.py", line 829, in parse
+    p = _parse_sub(source, pattern, 0)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/sre_parse.py", line 437, in _parse_sub
+    itemsappend(_parse(source, state, nested + 1))
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/sre_parse.py", line 778, in _parse
+    p = _parse_sub(source, state, nested + 1)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/sre_parse.py", line 437, in _parse_sub
+    itemsappend(_parse(source, state, nested + 1))
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/sre_parse.py", line 641, in _parse
+    source.tell() - here + len(this))
+sre_constants.error: multiple repeat at position 41
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 92, in chat_handler
+    update.message.reply_text(user_text)
+NameError: name 'user_text' is not defined
+telegram.ext.updater - ERROR - Error while getting Updates: Timed out
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 122, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(update.message.text, update)
+  File "bot.py", line 103, in translate_string_to_calculation_patter
+    _string = _string.lower().replace("сколько будет ",'').replace("на ",'')
+UnboundLocalError: local variable '_string' referenced before assignment
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 124, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(update.message.text, update)
+  File "bot.py", line 103, in translate_string_to_calculation_patter
+    _string = _string.lower().replace("сколько будет ",'').replace("на ",'')
+UnboundLocalError: local variable '_string' referenced before assignment
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 119, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(update.message.text, update)
+  File "bot.py", line 103, in translate_string_to_calculation_patter
+    _string = _string.lower().replace("сколько будет ",'').replace("на ",'')
+UnboundLocalError: local variable '_string' referenced before assignment
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 120, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(update.message.text, update)
+  File "bot.py", line 103, in translate_string_to_calculation_patter
+    _string = _string.lower().replace("сколько будет ",'').replace("на ",'')
+UnboundLocalError: local variable '_string' referenced before assignment
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 121, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(user_text, update)
+  File "bot.py", line 104, in translate_string_to_calculation_patter
+    _string = _string.lower().replace("сколько будет ",'').replace("на ",'')
+UnboundLocalError: local variable '_string' referenced before assignment
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 121, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(user_text, update)
+  File "bot.py", line 111, in translate_string_to_calculation_patter
+    update.message.reply_text("Answer: " + result_string)
+NameError: name 'update' is not defined
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 123, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(user_text, update)
+  File "bot.py", line 113, in translate_string_to_calculation_patter
+    update.message.reply_text("Answer: " + result_string)
+NameError: name 'update' is not defined
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 122, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(user_text, update)
+  File "bot.py", line 106, in translate_string_to_calculation_patter
+    for word in _string.split(''):
+ValueError: empty separator
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 125, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(user_text, update)
+  File "bot.py", line 104, in translate_string_to_calculation_patter
+    print(_string.split(''))
+ValueError: empty separator
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 125, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(user_text, update)
+  File "bot.py", line 104, in translate_string_to_calculation_patter
+    print(_string.split(''))
+ValueError: empty separator
+telegram.ext.updater - ERROR - Error while getting Updates: Timed out
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 125, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(user_text, update)
+  File "bot.py", line 109, in translate_string_to_calculation_patter
+    for word in _string.split(''):
+ValueError: empty separator
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 125, in chat_handler
+    calc_pattern = translate_string_to_calculation_patter(user_text, update)
+  File "bot.py", line 115, in translate_string_to_calculation_patter
+    update.message.reply_text("Answer: " + result_string)
+NameError: name 'update' is not defined
+telegram.ext.updater - ERROR - error in bootstrap phase; try=0 max_retries=0
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/http/client.py", line 1198, in getresponse
+    response.begin()
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/ssl.py", line 937, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/ssl.py", line 799, in read
+    return self._sslobj.read(len, buffer)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/ssl.py", line 583, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/utils/request.py", line 190, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/updater.py", line 387, in _bootstrap
+    url=webhook_url, certificate=cert, allowed_updates=allowed_updates)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/bot.py", line 57, in decorator
+    result = func(self, *args, **kwargs)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/bot.py", line 1765, in set_webhook
+    result = self._request.post(url_, data, timeout=timeout)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/utils/request.py", line 272, in post
+    **urlopen_kwargs)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/utils/request.py", line 192, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+telegram.ext.updater - ERROR - unhandled exception
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/http/client.py", line 1198, in getresponse
+    response.begin()
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/ssl.py", line 937, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/ssl.py", line 799, in read
+    return self._sslobj.read(len, buffer)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/ssl.py", line 583, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/utils/request.py", line 190, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/updater.py", line 149, in _thread_wrapper
+    target(*args, **kwargs)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/updater.py", line 275, in _start_polling
+    self._bootstrap(bootstrap_retries, clean=clean, webhook_url='', allowed_updates=None)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/ext/updater.py", line 387, in _bootstrap
+    url=webhook_url, certificate=cert, allowed_updates=allowed_updates)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/bot.py", line 57, in decorator
+    result = func(self, *args, **kwargs)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/bot.py", line 1765, in set_webhook
+    result = self._request.post(url_, data, timeout=timeout)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/utils/request.py", line 272, in post
+    **urlopen_kwargs)
+  File "/Users/kirillstepanov/anaconda/lib/python3.5/site-packages/telegram/utils/request.py", line 192, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+telegram.ext.dispatcher - CRITICAL - stopping due to exception in another thread

@@ -1,5 +1,5 @@
 NAMES = ["Вася", "Маша", "Петя", "Валера", "Саша", "Даша"]
-ANSWERS = {'привет':'уходи', 'здравствуйте':'Добрый день! Чем могу помочь?', 'йо': 'йо', 'yo':'yo!', 'хорошо':'серьезно?', 'отлично':'я рад за тебя'}
+ANSWERS = {'привет':'уходи', 'здравствуйте':'Добрый день! Чем могу помочь?', 'йо': 'йо, ты прав!', 'yo':'yo!', 'хорошо':'серьезно?', 'отлично':'я рад за тебя'}
 
 
 def find_person(user_name):
@@ -22,15 +22,21 @@ def find_person(user_name):
 
 def ask_user():
     while True:
-        input_string = input("Как дела? ").lower()
+        try:
+            input_string = input("Как дела? ").lower()
 
-        if input_string == 'пока':
-            print('Давай, удачи!')
+            if input_string == 'пока':
+                print('Давай, удачи!')
+                break
+            elif input_string in ANSWERS:
+                print(ANSWERS.get(input_string))
+            else:
+                print('Попробуй еще раз!') 
+        except KeyboardInterrupt as error:
+            print("\nSee you soon!")
             break
-        elif input_string in ANSWERS:
-            print(ANSWERS.get(input_string))
-        else:
-            print('Попробуй еще раз!') 
+        except Exception as error:
+            print(error)
 
 
 ask_user()
