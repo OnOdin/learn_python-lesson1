@@ -1,10 +1,12 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from learnpython_environment import get_bot_key
 import logging
 import json
 import random 
 import ephem
 import re
 import operator
+import time 
 
 random_phases = ["Теперь, когда я знаю, что мир зависит от таких легкомысленных людей, как мы, я думаю, у меня есть повод для беспокойства.", "Вся его дальнейшая жизнь была словно попыткой доказать всему миру превосходство интеллекта над телом.","Отклонившись так сильно от темы, я не могу удержаться от того, чтобы не пойти еще чуть дальше."]
 dic_constellations = {}
@@ -161,7 +163,7 @@ def word_cound_handler(bot, update):
     except Exception as error:
         print(error)
 
-def greet_user(bot, update):
+def greet_user_handler(bot, update):
     try:
         #print('Вызван /start')
         #print("------------------------------------------------------------------------------------------------")
@@ -179,15 +181,29 @@ def greet_user(bot, update):
     except Exception as error:
         print(error)
 
+def next_full_moon_question_handler(bot, update):
+    try:
+        user_text_words = re.findall('[\d]{4}/[\d]{2}/[\d]{2}', (update.message.text).replace('/fullmoon ',''))
+
+        if len(user_text_words) == 1:
+            update.message.reply_text("Ближайшее полнолуние - " + str(ephem.next_full_moon(user_text_words[0])))    
+        else:
+            update.message.reply_text("Something went wrong. Try add only one date.") 
+
+    except Exception as error:
+        print(error)
+    
+
 def main():
 
-    updater = Updater("465468320:AAHN4RR6C4cQVtsJi2trc1aL3WBfr4Ykgdw")
+    updater = Updater(get_bot_key())
     init_map_constellations()
 
     dp = updater.dispatcher
-    dp.add_handler(CommandHandler("start", greet_user))
+    dp.add_handler(CommandHandler("start", greet_user_handler))
     dp.add_handler(CommandHandler("planet", planet_handler))
     dp.add_handler(CommandHandler("wordcount", word_cound_handler))
+    dp.add_handler(CommandHandler("fullmoon", next_full_moon_question_handler))
     dp.add_handler(MessageHandler(Filters.text, chat_handler))
 
     print('- GO -')
